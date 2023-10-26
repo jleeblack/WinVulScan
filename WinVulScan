@@ -67,7 +67,7 @@ class Program{
             string envVariables= CheckEnvironmentVariables();
             writer.WriteLine("Environment Variables:");
             writer.WriteLine(envVariables);
-            Console.WriteLine("System information and vulnerability details saved to SystemInfoAndVulnerabilities.txt on the desktop.");
+            Console.WriteLine("System information and vulnerability details saved to WinVulScan.txt on the desktop.");
         }
     }
 
