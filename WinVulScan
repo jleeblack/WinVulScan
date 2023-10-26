@@ -52,8 +52,8 @@ class Program{
                 writer.WriteLine("No vulnerability information found");
             }
 
-            string apiKey = Configuration?.GetSection("GoogleCustomSearch:ApiKey")?.Value;
-            string searchEngineId = Configuration?.GetSection("GoogleCustomSearch:SearchEngineId")?.Value;
+            string apiKey = Configuration?.GetSection("GoogleCustomSearch:ApiKey")?.Value; //Your own Google API Key needs to be entered in the json file
+            string searchEngineId = Configuration?.GetSection("GoogleCustomSearch:SearchEngineId")?.Value; //Your own Custom Google Search ID needs to be entered in the json file
 
             if (apiKey == null || searchEngineId == null){
                 writer.WriteLine("API Key or search engine ID is missing from appsettings.json");
